@@ -1,0 +1,157 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    
+    <title>来自魔王阎</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon/favicon.ico">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/tagplugins.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    
+
+
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom.xml" title="来自魔王阎" type="application/atom+xml" />
+    
+</head>
+
+<body>
+  <div class="blog-header">
+   <a id="menu-nav-icon"><img src="/image/menu.png"/></a>
+   <div class="nav-container">
+     <nav id="main-nav">
+       
+         <a class="main-nav-link" href="/">Home</a>
+       
+         <a class="main-nav-link" href="/archives">Archives</a>
+       
+     </nav>
+   </div>
+   <!--
+   <div id="search-form-wrap">
+     <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+   </div>
+ -->
+    <h1 class="blog-title">来自魔王阎</h1>
+    <p class="lead blog-description"></p>
+</div>
+
+  <div id='main-part'>
+      
+    <div class="main">
+<div class="blog-post">
+    <!-- Title -->
+    
+      <h1 class="blog-post-title">
+        <a href="/2018/08/23/hexo/">Hexo博客搭建</a>
+      </h1>
+    
+    <!-- Date and Author -->
+    <p class="blog-post-meta">
+        2018-08-23
+        
+    </p>
+
+    
+
+    <!-- Content -->
+    <p>本文主要针对mac OS<br>hexo博客就是你现在打开的这种</p>
+<ol>
+<li><p>创建Github 域名和空间</p>
+<p> 1.1注册Github账号<br> 1.2 创建仓库</p>
+<pre><code>创建仓库的名字为name.github.io 
+其中的name 要与用户名一致
+name下面会用到
+</code></pre></li>
+<li><p>安装</p>
+<p> 2.1安装Git<br>   $ brew install git   // 安装Git<br>   也可以通过下载安装程序来安装</p>
+<p> 2.2安装Nodejs<br>   上网搜一下怎么安装node全是</p>
+<p> 2.3安装Hexo<br>   以上所有都安装完成之后安装Hexo<br>   $ sudo npm install hexo-cli -g</p>
+</li>
+<li><p>编写，发布</p>
+<p> $ hexo init name.github.io<br> 注意这里用到了name</p>
+<p> 安装主题<br> $ cd name.github.io //这里是进入到刚才新建的目录<br> $ git clone <a href="https://github.com/Suolawangzai/Sw-blog" target="_blank" rel="noopener">https://github.com/Suolawangzai/Sw-blog</a> //这里的主题就是我这个的主题，其他的主题到官网查看有很多</p>
+<p> 基础配置：打开文件夹name.github.io下的_config.yml修改几个地方，下面把几个必须设置的列出来按需求修改，记得保存， 还有注意配置的键值之间一定要有空格。<br> title: 来自魔王阎 //你博客的名字<br> author: Yan //你的名字<br> language: zh-Hans //语言 中文<br> theme: Sw-blog //刚刚安装的主题名称<br> type: git //使用Git 发布<br> repo: <a href="https://github.com/name/name.github.io.git" target="_blank" rel="noopener">https://github.com/name/name.github.io.git</a> // 刚创建的Github仓库 这里可能要自己添加 添加到type下面就行</p>
+<p> 添加文章内容<br> 在name.github.io/source/_posts添加后缀名为md的文件<br> 如：</p>
+<pre><code>-！-！-  （！号去掉）
+title: hello world
+---
+&gt; 这里就是一个例子。
+</code></pre><p> 测试<br> $ hexo s //<a href="https://localhost:4000" target="_blank" rel="noopener">https://localhost:4000</a> 访问。</p>
+<p> 安装hexo-deployer-git自动部署发布工具<br> $ npm install hexo-deployer-git –save</p>
+<p> 发布<br> $ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br> 第一次上传需要输入Github 邮箱和密码<br> 以后在每次把博客写完后，执行一下这个命令就可以直接发布了</p>
+<p> 博客已经完成，在浏览器中输入 <a href="http://name.github.io" target="_blank" rel="noopener">http://name.github.io</a> 就能够访问了。</p>
+<p> 更改主题<br> 只要吧themes目录下的文件删掉 gitclone想要的主题就好，这里别忘了更改上面的配置</p>
+</li>
+</ol>
+
+    <!-- Only display the Read More link if we are displaying an excerpt -->
+    
+
+    <hr />
+
+    
+
+    
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+  </div>
+  <!-- Footer -->
+  <div id="footer">
+  <div id="footer-social">
+    
+    
+    
+    
+    
+    
+</div>
+
+  <p id="footer-info">
+    &copy; 2018 Yan<br>
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> -
+    Theme <a href="https://github.com/Suolawangzai/hexo-theme-nebula" target="_blank">nebula</a>
+  </p>
+
+  <div id="busuanzi">
+    <span id="busuanzi_container_site_pv">
+      &hearts;
+    Total visits: <span id="busuanzi_value_site_pv"></span>
+    </span>
+  </div>
+  <!--
+  <div id="footer-info">
+    &copy; 2018 Yan<br>
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+  </div>
+-->
+</div>
+
+  <!-- After footer scripts -->
+  <!-- Disqus Comments -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+
+</html>
